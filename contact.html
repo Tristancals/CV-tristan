@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Tristan Cals</title>
+    <meta name="description" content="formulaire de contact vers.. rien pour l'instant">
+    <link type ="text/css" rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="public/img/photo_slack.jpg" alt="photo miniature de face de Tristan Cals"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">CV</a></li>
+                <li><a href="hobby.html">Centre d'intérêts</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formulaire">
+            <h1>Formulaire de contact</h1>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Tu préfère: </legend>
+                    <label for="jour">Le jour </label><input id="jour" type="radio" name="prefere" value="jour">
+                    <label for="nuit">La nuit </label><input id="nuit" type="radio" name="prefere" value="nuit">
+                    <label for="null">Je ne sait pas </label><input id="null" type="radio" name="prefere" checked value="null">
+                </fieldset>
+                <label for="pseudo">Pseudo</label>
+                <input required id="pseudo" type="text" name="pseudo">
+                <label for="email">Email</label>
+                <input required id="email" type="email" name="email">
+                <label for="complainte">Veuillez entrer ici votre complainte</label>
+                <textarea placeholder="Taper votre complainte ici..." required id="complainte" minlength="10" maxlength="240" rows="5" cols="33" name="complainte"></textarea>
+                <div class="chiffre">
+                    <label for="chiffre">Ton chiffre préféré</label>
+                    <select name="chiffre" id="chiffre" required >
+                        <option value="" selected disabled hidden>---choisir---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="0">0</option>
+                    </select>
+                </div>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>10 Place de la République <br>
+            38400 Saint Martin d'Hères <br>
+            <a href="mailto:tristancals38@gmail.com">tristancals38@gmail.com</a> <br>
+            Tél. <a href="tel:+3366331544">06 33 66 15 44</a>
+        </p>
+
+    </footer>
+</body>
+
+</html>

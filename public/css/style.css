@@ -1,0 +1,608 @@
+/*************/
+/** GENERAL **/
+/*************/
+
+
+@font-face {
+    font-family: "bla";
+    src: url("../font/OpenDyslexic-Regular.otf") format("opentype");
+}
+
+p , ul{
+    margin: 0;
+}
+
+h1, h2, h3, caption{
+    font-family: "bla";
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+}
+
+body{
+    background-color: rgb(218, 231, 227);
+    margin: 0;
+}
+
+section{
+    padding:0.5rem;
+}
+
+.photoProfil{
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: -1rem;
+    margin-left: 1.3rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+h3 {
+    font-size: 1.4rem;
+}
+h4 {
+    font-size: 1.1rem;
+}
+
+h1 , h2 , h3 , h4, caption{
+    text-transform: uppercase;
+}
+
+h1 , h2 , h3 , h4, div > ul{
+    margin-top: .8rem;
+    margin-bottom: 0.01rem;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+i{
+    font-size: 0.8rem;
+}
+
+main{
+    padding-top: 0.5rem;
+}
+
+
+/*************/
+/** HEADER  **/
+/*************/
+
+
+header{
+    height: 150px;
+    background: linear-gradient(to bottom right, #666666, #346799);
+    display: flex;
+}
+
+header img{
+    height: 140px;
+    border-radius: 2rem;
+    margin: 5px;
+}
+
+nav{
+    width: 100%;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type:none;
+}
+
+nav ul li{
+    border-radius: 1.5rem;
+    background-color: #cad7e6;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+.active{
+    background-color: #346799;
+    border: 1px solid white;
+}
+
+.active a{
+    color: white;
+}
+
+/** CV **/
+
+#html5:hover {
+    background-color: aquamarine;
+}
+
+.cv{
+    display: grid;
+    grid-template-areas:"perso corp"
+                        "perso1 corp";
+}
+section:nth-child(1) {
+    grid-area: perso;
+  }
+
+  section:nth-child(2) {
+    grid-area: corp;
+  }
+
+  section:nth-child(3) {
+    grid-area: perso1;
+  }
+
+
+/*************/
+/*** PERSO ***/
+/*************/
+
+
+.perso:first-child{
+    height: fit-content;
+}
+
+.perso:last-child{
+    padding-top: 0.95rem;
+    height: 820px;
+}
+
+.perso h3{
+    color:#666666;
+}
+
+.perso{
+    background-color: #cad7e6;
+}
+
+section:nth-child(3) > div:nth-child(4) > ul{
+    list-style-type: decimal;
+    font-weight: bold;
+    padding-top: 5.66rem;
+    height: 257px;
+}
+
+section:nth-child(3) > div:nth-child(2) > ul {
+    list-style-type: none ;
+    margin-top: 1.57rem;
+    margin-bottom: 1.57rem;
+
+}
+
+section:nth-child(3) > div:nth-child(4) > ul i{
+    font-weight: 100;
+}
+
+section:nth-child(3) > div:nth-child(6) > ul{
+    margin-top: 3.5rem;
+}
+
+.colorLangue{
+    color:#eee;
+}
+
+.colorLangue span{
+    color:#666666;
+}
+section:nth-child(3) > h3:nth-child(1){
+    margin-top: 1.1rem;
+}
+
+.perso > div:nth-child(4) > ul{
+    height: 49px;
+    padding-top: 17px;
+}
+
+.perso > div:nth-child(8) > ul{
+padding-top: 33px;
+}
+
+
+/**********/
+/** CORP **/
+/**********/
+
+
+.colorOutils{
+    color:#cfe7f5;
+}
+
+.colorOutils span{
+    color:#346799;
+
+}
+
+.corp > h3:nth-child(2){
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: none;
+    color: rgb(150, 150, 150);
+    margin-bottom: 2rem;
+}
+.corp > h3:nth-child(2) span {
+    text-transform: uppercase;
+}
+
+.corp > div:nth-child(4) > p{
+    text-align: justify;
+    margin-top: 0.8rem;
+}
+
+p i {
+    font-size: 1.2rem;
+}
+
+h3+div {
+    border-top:1.5px solid rgb(82, 82, 82);
+}
+div>div+div {
+    border-top:1px solid rgb(150, 150, 150);
+}
+
+.corp{
+    background-color: white;
+}
+
+.corp h3{
+    color:#346799;
+}
+
+.corp > div:nth-child(6) > ul,.perso > div:nth-child(4) > ul{
+    list-style-type: none;
+}
+section.corp > div:nth-child(4) > p{
+    text-indent: 3rem;
+}
+
+/** Table **/
+
+caption{
+    font-size: 1.4rem;
+    text-align: start;
+    font-weight: bold;
+    color: #346799;
+    margin-top: 0.8rem;
+}
+ tbody > tr:nth-child(3) td ,tbody > tr:nth-child(6) td,tbody > tr:nth-child(9) td{
+    border-top: 1.5px solid #c5c5c5;
+    border-collapse: collapse;
+    padding-top: 0.4rem;
+}
+
+table{
+    border-top: 1.5px solid black;
+    border-collapse: collapse;
+    margin-top: 0.4rem;
+    width: 100%;
+}
+
+td{
+    width: auto;
+    max-width: 100%;
+    min-width: 170px;
+}
+
+tr td:nth-child(3){
+    text-align: end;
+}
+
+tr td:nth-child(2){
+    font-size: 0.9rem;
+    text-align: end;
+    font-weight: bold;
+    color: #346799;
+}
+
+table span{
+    font-size: 0.9rem;
+}
+
+table li{
+    font-weight: bold;
+    color:rgb(150, 150, 150);
+}
+
+table:last-child tr:last-child td{
+    text-align:center;
+    color:rgb(150, 150, 150);
+}
+
+.espaceTop{
+    height: 2rem;
+    vertical-align: bottom;
+}
+
+.espaceBottom{
+    height: 2rem;
+    vertical-align: top;
+}
+
+.espaceBottomFor{
+    height: 3rem;
+    vertical-align: top;
+}
+
+.espaceBottomPro{
+    height: 5.8rem;
+    vertical-align: top;
+}
+
+
+/************/
+/** FOOTER **/
+/************/
+
+
+body{
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+main{
+    padding-bottom: 0.5rem;
+    min-height: 100%;
+    padding-bottom: 120px;
+}
+
+footer{
+    padding: 0.4rem;
+    height: 100px;
+    background: linear-gradient(to bottom right, #666666, #346799);
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    clear: both;
+    right: 0;
+    bottom:0;
+    left:0;
+}
+
+footer p {
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: #cad7e6;
+    padding: 1rem;
+}
+
+
+/***********/
+/** HOBBY **/
+/***********/
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+
+.grid :first-child{
+    grid-column: 1 / -1;
+}
+
+article{
+    background-color: whitesmoke;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+article:nth-child(even) img{
+    float: left;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+article:nth-child(odd) img{
+    float: right;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+iframe{
+    max-width:560px;
+     max-height:315px;
+}
+
+article p {
+    font-style: italic;
+}
+
+article p a {
+    font-weight: bolder;
+}
+
+
+/*************/
+/** CONTACT **/
+/*************/
+
+
+input[type="radio"]{
+    accent-color: red;
+}
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid red;
+    border-radius: 50%;
+}
+
+.formulaire ,.formulaire form{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+
+.formulaire h1{
+    color: #346799;
+}
+
+.formulaire{
+    background-color: whitesmoke;
+}
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #346799;
+    background-color:#cad7e6;
+    padding: 1rem;
+    width: 80%;
+    justify-content: space-around;
+}
+
+label ,.chiffre{
+    padding-top: 0.5rem;
+}
+
+form input:last-child{
+    margin-top:0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea, select, fieldset{
+    border-radius: 0.5rem;
+}
+
+
+/***** RESPONSIVE *****/
+
+
+@media (max-width: 940px) {
+
+body{
+    width: 100vw;
+    margin: auto;
+}
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3,caption {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: .9rem;
+    }
+    
+
+    main,.corp,.perso{
+        max-width: 600px;
+    }
+    /* cacher image header */
+    header img{
+        display: none;
+    }
+    /* supprimer padding start à la list de nav */
+    header ul{
+        padding-inline-start: 0;
+    }
+    /* permet un retour à la ligne de la nav bar */
+    header nav ul{
+        flex-wrap: wrap;
+    }
+    /* réorganiser la présentation du cv  */
+    .cv{
+        grid-template-areas:"perso"
+                            "corp"
+                            "perso1";
+    }
+    /* resize la photo de profil */
+    .perso img{
+        width: 25%;
+        margin: inherit;
+    }
+    /* réorganiser l'entete de la page cv */
+    .perso:first-child{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    /* mettre à la suite la photo et mes coordonner */
+    .perso:first-child div{
+        display: flex;
+        justify-content: space-around;
+    }
+    /* positionner le titre en haut à droite */
+    .perso:first-child h1{
+        position: absolute;
+        right: -140px;
+        top: -10px;
+        width: 100%;
+    }
+    /* ajuster la position des coordnner */
+    .perso:first-child p {
+        align-self: end;
+        padding-left: 1rem;
+    }
+
+    .corp > h3:nth-child(2){
+        font-size: 1rem;
+    }
+
+    .perso:last-child{
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        flex-wrap: wrap;
+    }
+  
+    .perso:last-child div:nth-child(4)  {
+        order: 6;
+    }
+    .perso:last-child h3:nth-child(3)  {
+        order: 5;
+    }
+
+    section:nth-child(3) > h3:nth-child(1) {
+        margin-top: 0.8rem;
+    }
+
+    section:nth-child(3) > div:nth-child(4) > ul {
+        padding-inline-start: 1.4rem;
+        padding-top: 1rem;
+        height: auto;
+    }
+
+    section:nth-child(3) > div:nth-child(6) > ul {
+        margin-top: 1rem;
+    }
+
+    table{
+        font-size: small;
+    }
+
+    td:nth-child(2),td:nth-child(3){
+        white-space: nowrap;
+    }
+
+    /* HOBBY */
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+
+}
